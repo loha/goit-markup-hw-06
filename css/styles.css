@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
@@ -63,7 +63,7 @@ img {
 }
 
 /* #region header */
-.header {
+.page-header {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   border-bottom: 1px solid #e7e9fc;
@@ -81,7 +81,7 @@ img {
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 117%;
@@ -123,7 +123,7 @@ img {
     padding-bottom: 24px;
   }
 
-  .navigation {
+  .header-nav {
     display: flex;
     align-items: center;
   }
@@ -134,14 +134,14 @@ img {
     gap: 40px;
   }
 
-  .nav-list > .nav-item > .header-list__first_active {
+  .nav-list > .nav-item > .studio {
     color: #404bbf;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .header-list__first_active::after {
-    content: "";
+  .studio::after {
+    content: '';
     width: 100%;
     position: absolute;
     left: 0;
@@ -151,7 +151,7 @@ img {
     border-radius: 2px;
   }
 
-  .nav-list .header-list__first {
+  .nav-list .nav-link {
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -184,8 +184,8 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .nav-list .header-list__first:hover,
-  .nav-list .header-list__first:focus,
+  .nav-list .nav-link:hover,
+  .nav-list .nav-link:focus,
   .contacts-list .contacts-link:hover,
   .contacts-list .contacts-link:focus {
     color: #404bbf;
@@ -295,7 +295,7 @@ img {
   gap: 40px;
 }
 
-.mobile-menu-link.header-list__first_active {
+.mobile-menu-link.studio {
   color: #404bbf;
 }
 
@@ -387,7 +387,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/title-background/main-bg-mob.jpg);
+    url(../images/img-name.jpg);
   padding: 72px 0;
   max-width: 320px;
   background-repeat: no-repeat;
@@ -404,7 +404,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/title-background/main-bg-mob-2x.jpg);
+      url(../images/img-name.jpg);
   }
 }
 
@@ -455,7 +455,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/title-background/main-bg-tab.jpg);
+      url(../images/img-name.jpg);
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -466,7 +466,7 @@ img {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/title-background/main-bg-tab-2x.jpg);
+        url(../images/img-name.jpg);
     }
   }
   .title-head {
@@ -489,7 +489,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/title-background/main-bg.jpg);
+      url(../images/img-name.jpg);
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -500,7 +500,7 @@ img {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/title-background/main-bg-2x.jpg);
+        url(../images/img-name.jpg);
     }
   }
 
@@ -1310,7 +1310,7 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
-.checkbox[type="checkbox"]:checked
+.checkbox[type='checkbox']:checked
   + .modal-privacy-checkbox
   > .checkbox-custom {
   fill: #f4f4fd;
